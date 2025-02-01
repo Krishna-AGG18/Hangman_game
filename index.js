@@ -12,7 +12,6 @@ const getWordHint = ()=>{
     let hintDiv = document.querySelector(".hint-text b");
     hintDiv.textContent = hint;
     currentWord = word;
-    console.log(currentWord)
     let wordListArr = word.split("").map(()=> `<li class="letter"></li>`).join("");
     wordDisplay.innerHTML = wordListArr;
 }
