@@ -24,7 +24,7 @@ const gameResult = (isVictory)=>{
         gameModal.querySelector("h4").innerText = (isVictory)? "You won!" : "Game over!";
         gameModal.querySelector("p").innerHTML = `${modalText}: ${currentWord}`;
 
-    },300)
+    },100)
 }
 const initGame = (btn,clickedChar)=>{
     if(currentWord.includes(clickedChar)){
